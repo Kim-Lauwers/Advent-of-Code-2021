@@ -23,14 +23,14 @@ public class Part1 {
 
     private static void parse(String line) {
         if (line.startsWith("forward")) {
-            int dist = Integer.valueOf(line.substring(8));
-            horizontal += dist;
+            int distance = Integer.valueOf(line.substring(8));
+            horizontal += distance;
         } else if (line.startsWith("down")) {
-            int dist = Integer.valueOf(line.substring(5));
-            depth += dist;
+            int distance = Integer.valueOf(line.substring(5));
+            depth += distance;
         } else if (line.startsWith("up")) {
-            int dist = Integer.valueOf(line.substring(3));
-            depth -= dist;
+            int distance = Integer.valueOf(line.substring(3));
+            depth -= distance;
         }
     }
 }
